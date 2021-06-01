@@ -1,18 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Easy Science</title>
-</head>
-
-<body>
-	<%- include('../partials/header.ejs') %>
-	<div>
-		<%- include('../partials/errorMessage.ejs') %>
-		<%- body  %>
-	</div>
-</body>
-
-</html>
+<section>
+    <% posts.forEach(post => { %>
+        <a href=/posts/<%= post._id %>> 
+            <div>
+                <h1> <%= post.title %> </h1>
+                <h2> <%= post.description %> </h2>
+            </div>
+        </a>
+    <% }) %>
+    
+</section>
