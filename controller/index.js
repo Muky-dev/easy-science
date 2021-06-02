@@ -2,7 +2,6 @@ import passport from 'passport';
 import passportLocal from 'passport-local';
 import User from "../models/User.js";
 import Post from "../models/Post.js";
-import cfg from '../conf/jwtconfig.js'
 
 export async function getFeed(req, res) {
     let posts
